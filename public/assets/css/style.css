@@ -1,0 +1,291 @@
+
+.nav-home {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(aqua, blue);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.child_newNav {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 130px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-nav {
+    font-size: 24px;
+    margin-left: 15px;
+    position: relative;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #eeff00, #00fd19);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    top: 3px;
+    right: 30px;
+}
+
+.text-nav:hover {
+    color: brown;
+    transition: all .3s linear;
+}
+
+span.breadcrumb{
+    background-color: #007cf8 ;
+}
+
+.form-Editor{
+    background-image: url(../img/download.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+
+    
+}
+
+.edit-form input:nth-child(3),input:nth-child(2),input:nth-child(1){
+   margin-bottom: 30px;
+   height: 50px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    border-radius: 50px;
+    padding:20px;
+}
+.edit-form input:nth-child(4){
+    border-radius: 50px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 90px;
+    background-color: #10ac20;
+    font-size: 20px;
+}
+.edit-form input:nth-child(5){
+    border-radius: 50px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 90px;
+    background-color: #10ac20;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.num_phone{
+    background-image: linear-gradient(to left, #ff0606, #fd0000) !important;
+    color: transparent !important;
+    background-clip: text !important;
+    -webkit-background-clip: text ipo !important;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 15px;
+    display: inline-block;
+    position: fixed;
+    top: 53px;
+    right: 112px;
+    width: 5%;
+
+}
+/* ---------------------------------------------------------------------- */
+/* تخصيص عند تصغير الشاشة (حجم الجوال) */
+@media screen and (max-width: 992px) {
+    .text-nav {
+        display: none;
+    }
+    .cart-edit{
+        display: none;
+    }
+    span.navbar-toggler-icon {
+        width: 30px;
+    }
+
+    button.me-2.navbar-toggler {
+        display: inline-block;
+        position: fixed;
+        width: 10%;
+        top: 25px;
+        right: 20px;
+
+
+    }
+
+    nav.navbar.navbar-light.bg-faded {
+        background: linear-gradient(aqua, blue);
+        padding: 0px;
+        float: right;
+        width: 100%;
+        position: relative;
+        top: 40px;
+        right: 0px;
+
+    }
+
+    .solve  {
+        display: flex ;
+        justify-content: center;
+        background-image: linear-gradient(to left, #eeff06, #00fd19) !important;
+        color: transparent !important;
+        background-clip: text !important;
+        -webkit-background-clip: text ipo !important;
+        font-family: "Arvo", serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 20px;
+        letter-spacing: 1px;
+        animation: fall 0.5s ease-in-out forwards;
+        
+    }
+    .Cart_phone {
+        display: inline-block;
+        position: fixed;
+        width: 5%;
+        top: 30px;
+        right: 110px;
+        color: white;
+        font-size: 20px;
+        
+        
+    }
+
+    .Cart_phone:hover{
+        color: red;
+        transition: all .3s linear;
+    }
+
+    .solve:hover{
+        color: red !important;
+        transition: all .3s linear;
+    }
+
+    @keyframes fall {
+        0% {
+          transform: translateY(-30px); /* بداية الحرف فوق قليلاً */
+        }
+        60% {
+          transform: translateY(10px);  /* سقوط قريب من الأرض */
+        }
+        80% {
+          transform: translateY(-5px); /* ارتداد خفيف */
+        }
+        100% {
+          transform: translateY(0); /* العودة إلى الأرض */
+        }
+      }
+
+    
+
+}
+
+@media screen and (min-width: 993px) {
+    button.me-2.navbar-toggler {
+        display: none;
+        justify-content: center;
+        width: 10%;
+        margin-left: auto;
+        margin-top: 15px;
+    }
+    .num_phone{
+        display: none;
+    }
+    .Cart_phone{
+        display: none;
+    }
+    .num_phone{
+        display: none;
+    }
+}
+
+/* ----------------------------------------------------------------------------- */
+.arvo-regular {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arvo-bold {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.arvo-regular-italic {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.arvo-bold-italic {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* ------------------------------------------------------------------- */
+
+
+.edition-v{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #ee626b;
+    color: #fff;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 16px;
+    transition: all .3s;
+    border: none;
+}
+
+.edition-v:hover{
+    background-color: #0071f8;
+}
+
+.cart-edit{
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    top: 15px;
+    right: 33px;
+}
+
+.edition-v1{
+    background-color: rgba(251, 251, 251, 0.2);
+}
+
+.edition-v2{
+    max-width: 300px;
+}
+.edition-v3{
+    width : 45px;
+}
+.Final{
+    margin-top: -28px;
+}
+/* --------------------------------------------------- */
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    }
+
+
